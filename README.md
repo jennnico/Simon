@@ -30,6 +30,7 @@ Logic highlights:
 
 
 Areas for improvement:
+
 •	If the user makes a mistake on Regular Mode, they should be able to try, again.
 
 
