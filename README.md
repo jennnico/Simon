@@ -31,7 +31,7 @@ Logic highlights:
 
 Areas for improvement:
 
-•	If the user makes a mistake on Regular Mode, they should be able to try, again.
+•	Styling: Make buttons appear to light up, rather than darken.
 
 
 
