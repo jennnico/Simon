@@ -1,7 +1,3 @@
-//Issues:
-//1. Regular mode: if I make a mistake, allow me to try again
-
-
 $(document).ready(function() {
   /////VARIABLES, galore!
   //sounds
@@ -22,7 +18,6 @@ $(document).ready(function() {
   var colors = [GREEN, RED, YELLOW, BLUE];
   test = 0;
 
-  
   /////FUNCTIONS, galore!
   //make the buttons darken and play corresponding sound on SIMON's turn
    function flash(spot) {
@@ -61,7 +56,7 @@ $(document).ready(function() {
     }, 2000);
    }
 
-//Game logic
+//Game logic adapted from https://www.youtube.com/watch?v=_r6B369ZTsc 
    function sendColor(color){
      //if the array is empty, start a new game
      if(!sequence.length){
@@ -95,10 +90,9 @@ $(document).ready(function() {
            step = 0;
            nextSequence();
          //REGULAR mode, play last sequence again.
-           //NEEDS ATTENTION!!!!!
-           //1. how to let user try again? keep getting infinite loop
          }else{
            alert("incorrecto!");
+           step = 0;
            var i = 0;
            var myInterval = setInterval(function(){ 
              id = sequence[i];
@@ -142,8 +136,7 @@ $(document).ready(function() {
     sequence = [];
     nextSequence();
     a.value = 1;
-  
-      
+    
   //When the user clicks...
   $("#0").click(function(){
     verde.load();
